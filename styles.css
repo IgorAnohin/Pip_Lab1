@@ -1,0 +1,65 @@
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    text-align: center;
+    border: 3px solid green;
+    background-color: lightblue;
+}
+
+.variant {
+    width: 50%;
+}
+
+.group {
+    width: 50%;
+}
+
+.autor {
+    color: green;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    font-size: 130%;
+    padding: 10%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container > div {
+    padding: 1%;
+}
+
+.parameter {
+    display: table-cell;
+    text-align: center;
+    width: 100%;
+}
+
+#answers {
+    text-align: center;
+    border: 3px solid black;
+}
+.answer-item {
+    align: center;
+    border: 3px solid black;
+}
+th {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
