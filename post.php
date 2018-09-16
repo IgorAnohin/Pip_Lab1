@@ -7,6 +7,7 @@
 
 <?php
 $start_time = time();
+session_start();
 
 function get_X() {
     $X_boxes = $_POST['xCheckBox'];
@@ -88,21 +89,19 @@ if ($R_val == "") {
 
 $result = calculate_result($X_val, $Y_val, $R_val);
 
-##$q = intval($_GET['q']);
-##
-##$con = mysqli_connect('localhost','peter','abc123','my_db');
-##if (!$con) {
-##    die('Could not connect: ' . mysqli_error($con));
-##}
-##
-##mysqli_select_db($con,"ajax_demo");
-##$sql="SELECT * FROM user WHERE id = '".$q."'";
-##$result = mysqli_query($con,$sql);
+#$db_connection = pg_connect("host=localhost dbname=phptest user=postgres password=football")
+#            or die('Не удалось соединиться: ' . pg_last_error());
+#
+#$result = pg_query($db_connection, "SELECT * FROM requests");
+
 
 echo "Today is " . date("Y/m/d G:i:s") . "<br>";
 $end_time = time();
 $work_time = $end_time - $start_time;
 echo "Work time: " .$work_time. " seconds<br>";
+
+#$ses_id = session_id();
+#echo "Session: " .$ses_id. "<br>";
 
 echo "
 <table id=\"answers\" width=\"100%\">
@@ -121,7 +120,6 @@ echo "<td class='answer-item'>".$result."</td>";
 echo "</tr>";
 
 echo "</table>";
-##mysqli_close($con);
 ?>
 </body>
 </html>
