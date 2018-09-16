@@ -1,5 +1,5 @@
 header {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: sans-serif;
     font-size: 150%;
     text-align: center;
     border: 3px solid green;
@@ -22,6 +22,10 @@ legend {
     background-color: #000;
     color: #fff;
     padding: 3px 6px;
+}
+
+p:first-letter {
+    color: green;
 }
 
 .grid-container {
@@ -49,3 +53,6 @@ legend {
     width: 100%;
 }
 
+canvas[width] {
+    border:1px solid black;
+}
