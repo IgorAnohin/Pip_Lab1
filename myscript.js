@@ -65,11 +65,12 @@ function _change_and_redraw(object, min_value, max_value) {
     else {
         parameter = parseFloat(parameter.toFixed(3));
         if (parameter >= max_value) {
-            object.value = max_value - 0.001;
+            parameter = max_value - 0.001;
         }
         if (parameter <= min_value) {
-            object.value = min_value + 0.001;
+            parameter = min_value + 0.001;
         }
+        object.value = parameter;
         redraw();
     }
     return true;
