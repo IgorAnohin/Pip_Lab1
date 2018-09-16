@@ -1,21 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        #answers {
-            text-align: center;
-            border: 3px solid black;
-        }
-        .answer-item {
-            align: center;
-            border: 3px solid black;
-        }
-        th {
-            background-color: #000;
-            color: #fff;
-            padding: 3px 6px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="post_styles.css"/>
 </head>
 <body>
 
