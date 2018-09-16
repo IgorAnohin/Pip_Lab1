@@ -172,3 +172,27 @@ function check_submit_avalible() {
     }
 }
 
+$(window).load(function () {
+
+    $('form').on('submit', function (e) {
+
+        e.preventDefault();
+
+        var answer = document.getElementById("phpAnswer");
+
+        $.ajax({
+            type: 'post',
+            url: 'post.php',
+            data: $('form').serialize(),
+            response: 'text',
+            success: function (response) {
+                answer.innerHTML = response;
+            },
+            error: function () {
+                alert("Error");
+            }
+        });
+
+    });
+
+});
